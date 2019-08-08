@@ -1,0 +1,312 @@
+/*      Body    */ 
+* {
+    box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 1.42857143;
+    color: #333;
+    margin:0;
+    padding:0;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-fluid{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px\9;
+    line-height: normal;
+}
+input[type=checkbox], input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+/*label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}*/
+
+
+/*      NavBar      */
+#navbarBox{
+    box-shadow: 0 4px 2px -2px rgba(216,209,200,.7); 
+    background-color: #fff;
+    top: 0;
+}
+.navbar-fixed-bottom, .navbar-fixed-top {
+    position: fixed !important;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar {
+    position: relative;
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }   
+}
+#navbar-toggle-cbox {
+    display: none;
+}
+@media (min-width: 992px){
+    .navbar-toggle {
+        display: none;
+    }   
+}
+.navbar-toggle {
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+@media (min-width: 992px){
+    .navbar-collapse.collapse {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0;
+        overflow: visible!important;
+    }   
+}
+@media (min-width: 768px){
+    .navbar-nav>li {
+        float: left;
+    }   
+}
+@media (max-width:768px){
+    .boxNavBar {
+        display: block !important;   
+        box-shadow: 0 4px 2px -2px rgba(216,209,200,.7);
+        background-color: #fff;
+    }
+    .navbar-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #777;
+}
+@media (min-width: 768px){
+    .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }   
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+@media (min-width: 768px){
+    .navbar-nav>li {
+        float: left;
+    }
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+#navbar-toggle-cbox:checked ~ .collapse {
+    display: inline-block;
+    transition: 2.5s;
+}
+.collapse{
+    display: none;
+    transition: 2.0s;
+}
+#navbar-toggle-cbox {
+    display:none;
+}
+.boxNavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*      Carousel or Slide Show*/
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+
+
+
+
+.img-campaign{
+    background-size: contain;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.carousel{
+    width: 100%;
+    margin: 0 auto;
+}
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.carousel-control.prev {
+    left: 2%;
+}
+.carousel-control.next {
+    right: 2%;
+}
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+
+
+/*      Media Query     */
+@media (min-width: 320px){
+}
+@media (min-width: 768px){
+    .container {
+        width: 100%;
+    }
+}
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }   
+}
